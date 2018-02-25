@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- activity_main -->
+    <dimen name="act_main_loading_label_margin_top">12dp</dimen>
+    <dimen name="act_main_button_retry_margin_top">12dp</dimen>
+    <dimen name="act_main_grid_view_movies_column_width">180dp</dimen>
+
+    <!-- activity_movie_detail -->
+    <dimen name="act_movie_detail_gradient_view_height">0dp</dimen>
+
+    <dimen name="act_movie_detail_title_margin">16dp</dimen>
+
+    <dimen name="act_movie_detail_overview_width">0dp</dimen>
+    <dimen name="act_movie_detail_overview_padding">16dp</dimen>
+
+    <!-- [layout] grid_view_item-->
+    <dimen name="layout_grid_view_item_height">320dp</dimen>
+
+    <!-- [layout] movie_info -->
+    <dimen name="layout_movie_info_padding">16dp</dimen>
+
+    <dimen name="layout_movie_info_poster_width">138dp</dimen>
+    <dimen name="layout_movie_info_poster_margin_start">16dp</dimen>
+
+    <dimen name="layout_movie_info_icon_duration_margin_start">24dp</dimen>
+    <dimen name="layout_movie_info_icon_duration_margin_top">8dp</dimen>
+
+    <dimen name="layout_movie_info_text_duration_margin_bottom">8dp</dimen>
+    <dimen name="layout_movie_info_text_duration_margin_start">16dp</dimen>
+
+    <dimen name="layout_movie_info_icon_calendar_margin_end">8dp</dimen>
+    <dimen name="layout_movie_info_icon_calendar_margin_start">8dp</dimen>
+    <dimen name="layout_movie_info_icon_calendar_margin_top">16dp</dimen>
+
+    <dimen name="layout_movie_info_text_date_margin_bottom">8dp</dimen>
+    <dimen name="layout_movie_info_text_date_margin_start">16dp</dimen>
+
+    <dimen name="layout_movie_info_icon_star_margin_end">8dp</dimen>
+    <dimen name="layout_movie_info_icon_star_margin_start">8dp</dimen>
+    <dimen name="layout_movie_info_icon_star_margin_top">16dp</dimen>
+
+    <dimen name="layout_movie_info_text_rating_margin_bottom">8dp</dimen>
+    <dimen name="layout_movie_info_text_rating_margin_start">16dp</dimen>
+
+    <dimen name="layout_movie_info_button_favorite_margin_bottom">8dp</dimen>
+    <dimen name="layout_movie_info_button_favorite_padding">12dp</dimen>
+
+    <!-- [layout] movie_reviews -->
+    <dimen name="layout_movie_review_label_padding">16dp</dimen>
+
+    <dimen name="layout_movie_review_list_container_margin">16dp</dimen>
+
+    <!-- [layout] review_list_item -->
+    <dimen name="layout_review_list_item_margin_end">16dp</dimen>
+    <dimen name="layout_review_list_item_padding">16dp</dimen>
+
+    <dimen name="layout_review_list_item_content_width">286dp</dimen>
+
+    <dimen name="layout_review_list_item_text_content_margin_top">8dp</dimen>
+
+    <!-- [layout] trailer_info -->
+    <dimen name="layout_trailer_info_label_padding">16dp</dimen>
+
+    <dimen name="layout_trailer_info_list_container_margin_horizontal">16dp</dimen>
+
+    <!-- [layout] trailer_list_item -->
+    <dimen name="layout_trailer_list_item_icon_margin">24dp</dimen>
+    <dimen name="layout_trailer_list_item_margin_bottom">18dp</dimen>
+
+    <dimen name="layout_trailer_list_item_name_margin_bottom">8dp</dimen>
+    <dimen name="layout_trailer_list_item_name_margin_start">16dp</dimen>
+    <dimen name="layout_trailer_list_item_name_margin_end">8dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <dimen name="large_text_size">24sp</dimen>
+    <dimen name="extra_large_text_size">32sp</dimen>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/layout_movie_info_padding"
+    android:paddingTop="@dimen/layout_movie_info_padding">
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="@dimen/layout_movie_info_poster_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_movie_info_poster_margin_start"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/img_poster_content_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poster_placeholder" />
+
+    <ImageView
+        android:id="@+id/img_icon_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_movie_info_icon_duration_margin_start"
+        android:layout_marginTop="@dimen/layout_movie_info_icon_duration_margin_top"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/img_icon_duration_content_description"
+        app:layout_constraintStart_toEndOf="@+id/img_poster"
+        app:layout_constraintTop_toTopOf="@+id/img_poster"
+        app:srcCompat="@drawable/ic_duration" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_movie_info_text_duration_margin_start"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/img_icon_duration"
+        app:layout_constraintStart_toEndOf="@+id/img_icon_duration"
+        app:layout_constraintTop_toTopOf="@+id/img_icon_duration"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="0min" />
+
+    <ImageView
+        android:id="@+id/img_icon_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_movie_info_icon_calendar_margin_end"
+        android:layout_marginStart="@dimen/layout_movie_info_icon_calendar_margin_start"
+        android:layout_marginTop="@dimen/layout_movie_info_icon_calendar_margin_top"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/img_icon_calendar_content_description"
+        app:layout_constraintEnd_toEndOf="@+id/img_icon_duration"
+        app:layout_constraintStart_toStartOf="@+id/img_icon_duration"
+        app:layout_constraintTop_toBottomOf="@+id/img_icon_duration"
+        app:srcCompat="@drawable/ic_calendar" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="@dimen/layout_movie_info_text_date_margin_start"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/small_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/img_icon_calendar"
+        app:layout_constraintStart_toEndOf="@+id/img_icon_calendar"
+        app:layout_constraintTop_toTopOf="@+id/img_icon_calendar"
+        tools:text="00-00-0000" />
+
+    <ImageView
+        android:id="@+id/img_icon_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_movie_info_icon_star_margin_end"
+        android:layout_marginStart="@dimen/layout_movie_info_icon_star_margin_start"
+        android:layout_marginTop="@dimen/layout_movie_info_icon_star_margin_top"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/img_icon_rating_content_description"
+        app:layout_constraintEnd_toEndOf="@+id/img_icon_calendar"
+        app:layout_constraintStart_toStartOf="@+id/img_icon_calendar"
+        app:layout_constraintTop_toBottomOf="@+id/img_icon_calendar"
+        app:srcCompat="@drawable/ic_star" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="@dimen/layout_movie_info_text_rating_margin_start"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/small_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/img_icon_star"
+        app:layout_constraintStart_toEndOf="@+id/img_icon_star"
+        app:layout_constraintTop_toTopOf="@+id/img_icon_star"
+        tools:text="0.0/10" />
+
+    <Button
+        android:id="@+id/btn_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_movie_info_button_favorite_margin_bottom"
+        android:background="@drawable/button_background"
+        android:padding="@dimen/layout_movie_info_button_favorite_padding"
+        android:text="@string/please_wait"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/img_poster"
+        app:layout_constraintStart_toStartOf="@+id/img_icon_duration"
+        tools:text="mark as favorite" />
+</android.support.constraint.ConstraintLayout>

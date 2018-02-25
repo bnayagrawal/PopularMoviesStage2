@@ -1,0 +1,52 @@
+<resources>
+    <!-- Application wide-->
+    <string name="app_name">Popular Movies</string>
+    <string name="movie_details">Movie Details</string>
+
+    <string name="movie_poster_size">w185</string>
+    <string name="movie_backdrop_size">w1280</string>
+
+    <!-- activity_main -->
+    <string name="minutes">min</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading&#8230;</string>
+
+    <string name="activity_main_menu_action_popular_movies">Popular Movies</string>
+    <string name="activity_main_menu_action_top_rated_movies">Top Rated Movies</string>
+    <string name="activity_main_menu_action_favorite_movies">Favorite Movies</string>
+
+    <string name="network_error">Please check your internet connection!</string>
+    <string name="movie_not_found">Movie not found!</string>
+    <string name="db_insert_error">Error adding movie to favorites!</string>
+    <string name="db_insert_success">Added to favorites</string>
+    <string name="db_delete_error">Failed to remove from favorites!</string>
+    <string name="db_delete_success">Removed from favorites</string>
+    <string name="offline_data">Showing offline data. Internet connection required to fetch movie trailers and reviews!</string>
+    <string name="offline">OFFLINE</string>
+    <string name="unavailable_offline">Movie details not available offline! Please connect to internet and retry.</string>
+    <string name="empty_database">You have not marked any movie as favorite!</string>
+
+    <!-- activity_movie_detail -->
+    <string name="img_backdrop_content_description">Movie backdrop image</string>
+
+    <!-- movie_info -->
+    <string name="img_poster_content_description">Movie poster</string>
+    <string name="img_icon_duration_content_description">Movie runtime icon</string>
+    <string name="img_icon_calendar_content_description">Calendar icon</string>
+    <string name="img_icon_rating_content_description">Star icon</string>
+    <string name="button_favorite">Mark as favorite</string>
+    <string name="button_remove_favorite">Remove favorite</string>
+    <string name="please_wait">Please Wait&#8230;</string>
+
+    <!-- trailer_info -->
+    <string name="label_trailer">Trailers</string>
+    <string name="trailers_not_available">Trailers not available</string>
+
+    <!-- movie_reviews -->
+    <string name="label_reviews">Reviews</string>
+    <string name="reviews_not_available">No reviews</string>
+
+    <!-- trailer_list_item -->
+    <string name="img_trailer_icon_content_description">Trailer icon</string>
+
+</resources>

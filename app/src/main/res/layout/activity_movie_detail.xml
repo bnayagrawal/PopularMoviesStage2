@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.bnayagrawal.popularmoviesstage2.MovieDetailActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/img_backdrop_content_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backdrop_placeholder" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/act_movie_detail_gradient_view_height"
+            android:background="@drawable/gradient"
+            app:layout_constraintBottom_toBottomOf="@+id/img_backdrop"
+            app:layout_constraintEnd_toEndOf="@+id/img_backdrop"
+            app:layout_constraintStart_toStartOf="@+id/img_backdrop"
+            app:layout_constraintTop_toTopOf="@+id/img_backdrop" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/act_movie_detail_title_margin"
+            android:layout_marginEnd="@dimen/act_movie_detail_title_margin"
+            android:layout_marginStart="@dimen/act_movie_detail_title_margin"
+            android:fontFamily="sans-serif-light"
+            tools:text="Movie Title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/extra_large_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/img_backdrop"
+            app:layout_constraintEnd_toEndOf="@+id/img_backdrop"
+            app:layout_constraintStart_toStartOf="@+id/img_backdrop" />
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="@dimen/act_movie_detail_overview_width"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryLight"
+            android:padding="@dimen/act_movie_detail_overview_padding"
+            tools:text="Movie Overview"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <include
+            android:id="@+id/movie_info"
+            layout="@layout/movie_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_overview" />
+
+        <include
+            android:id="@+id/trailer_info"
+            layout="@layout/trailer_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_info"/>
+
+        <include
+            android:id="@+id/movie_reviews"
+            layout="@layout/movie_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trailer_info"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

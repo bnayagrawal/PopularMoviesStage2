@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/layout_review_list_item_margin_end"
+    android:background="@color/colorPrimaryLight"
+    android:padding="@dimen/layout_review_list_item_padding">
+
+    <TextView
+        android:id="@+id/tv_review_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Author" />
+
+    <TextView
+        android:id="@+id/tv_review_content"
+        android:layout_width="@dimen/layout_review_list_item_content_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_review_list_item_text_content_margin_top"
+        android:textColor="@color/primary_text"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_review_author"
+        tools:text="Content" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/popular_movies"
+            android:title="@string/activity_main_menu_action_popular_movies"
+            android:checked="true"/>
+        <item
+            android:id="@+id/top_rated_movies"
+            android:title="@string/activity_main_menu_action_top_rated_movies"/>
+        <item
+            android:id="@+id/favorite_movies"
+            android:title="@string/activity_main_menu_action_favorite_movies"/>
+    </group>
+</menu>
