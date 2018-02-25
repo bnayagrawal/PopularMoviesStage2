@@ -18,6 +18,7 @@ This app makes use of the following external libraries.
 Movie data is provided by https://www.themoviedb.org/ <br/>
 Volley HTTP library https://developer.android.com/training/volley/index.html <br/>
 Image caching and loading framework https://github.com/bumptech/glide <br/>
+View binding using ButterKnife https://github.com/JakeWharton/butterknife
 Some vector icons used in this app is downloaded from https://www.flaticon.com/ [Kudos to the designers]
 
 ![screenshots](https://i.imgur.com/e9pMq9k.jpg)
